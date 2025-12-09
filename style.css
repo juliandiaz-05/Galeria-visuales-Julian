@@ -1,0 +1,69 @@
+/* ======== ESTILO GENERAL ======== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0f27;
+  /* Azul oscuro */
+  color: white;
+}
+
+/* ======== TÍTULO ======== */
+h1 {
+  text-align: center;
+  padding: 25px 0;
+  color: #ff9d28;
+  /* Naranja Dragon Ball */
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px #ff7b00;
+}
+
+/* ======== GALERÍA (5 COLUMNAS) ======== */
+.gallery {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* 5 columnas exactas */
+  gap: 25px;
+  padding-bottom: 40px;
+}
+
+/* ======== TARJETAS ======== */
+.card {
+  background: #1a2146;
+  /* Azul intermedio */
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 123, 0, 0.35);
+  /* Sombra naranja suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(255, 162, 0, 0.7);
+}
+
+/* ======== IMÁGENES ======== */
+.card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+/* ======== TÍTULOS ======== */
+.card h2 {
+  margin: 10px 0 5px;
+  font-size: 1.3rem;
+  color: #ffd497;
+  /* Naranja claro */
+}
+
+/* ======== DESCRIPCIONES ======== */
+.card p {
+  padding: 0 10px 15px;
+  font-size: 0.9rem;
+  color: #f3f3f3;
+}
